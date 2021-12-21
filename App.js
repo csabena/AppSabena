@@ -4,19 +4,7 @@
  *
  * @format
  * @flow strict-local
- */
-
-import React from 'react';
-import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+ 
 
 import {
   Colors,
@@ -25,6 +13,18 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+  useColorScheme,
+} from 'react-native';
+
+import type {Node} from 'react';
+import React from 'react';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -110,3 +110,22 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+*/
+
+import { Text, View } from 'react-native';
+
+import React from 'react';
+
+const HolaCoderApp = () => {
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center"
+      }}>
+      <Text>Hola Coder!</Text>
+    </View>
+  )
+}
+export default HolaCoderApp;
